@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPE GYM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* CSS reset */
+        body {
+            color: wheat;
+            margin: 0px;
+            padding: 0px;
+            background: url('IMG/bg.jpg.jpg');
+            font-family: "Audiowide", sans-serif;
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 61%;
+            margin: 38px auto;
+            /* border: 2px solid rgb(175, 91, 110); */
+            background-color: black;
+            /* position: fixed;
+            top: 12px; */
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            right: 32px;
+            top: 42px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 23px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(223, 16, 16);
+        }
+
+        .left img {
+            width: 102px;
+            filter: invert(100%);
+            text-align: justify;
+        }
+
+        .left div {
+            color: black;
+            text-align: center;
+            /* line-height: 0px; */
+            font-size: 23px;
+            font-weight: bolder;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(119 20 20 / 12%);
+            color: rgb(37, 36, 36);
+            padding: 4px 14px;
+            border: 4px solid rgb(61, 51, 51);
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /* color: rgb(211, 14, 14); */
+            background-color: black;
+        }
+
+        #bigger {
+            font-size: 26px;
+        }
+
+        .container {
+            border: 4px solid black;
+            color: black;
+            margin: 122px 52px;
+            padding: 65px 41px;
+            width: 35%;
+            border-radius: 12px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 135px;
+            padding: 8px 68px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 4px auto;
+            font-family: cursive;
+        }
+        .container h1{
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+        .container button{
+            display: block;
+            margin: 12px auto;
+            width: 24%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <div class="left">
+                <img src="IMG/logo2.jpg" alt="">
+                <div> HOPE GYM</div>
+            </div>
+
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active" id="bigger">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness center</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right for search -->
+        <div class="right">
+            <!-- <input type="search" id="search" placeholder="Search here"> -->
+            <button class="btn">Email</button>
+            <button class="btn">Contact us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> <strong>The Best gym of delhi now</strong> </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form-group">
+                <input type="" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
